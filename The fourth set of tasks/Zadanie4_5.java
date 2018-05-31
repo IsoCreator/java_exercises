@@ -7,7 +7,7 @@ public class Zadanie4_5{
 		
 		System.out.print("Podaj n: ");
 		Scanner ni = new Scanner(System.in);
-		int n = ni.nextInt();
+		int n = ni.nextInt(); 
 		System.out.print("Podaj m: ");
 		Scanner mi = new Scanner(System.in);
 		int m = mi.nextInt();
