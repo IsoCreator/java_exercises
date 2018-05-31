@@ -23,7 +23,7 @@ public class Zadanie4_2{
 				System.out.println(lista.get(i));
 		}
 		
-		// sortowanie bąbelkowe (XD)
+		// sortowanie bąbelkowe
 		for (int i=0;i<99;i++){
 			for (int j=0;j<99-i;j++){
 				if ((int)lista.get(j) > (int)lista.get(j+1)){
