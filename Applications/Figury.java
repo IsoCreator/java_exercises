@@ -70,7 +70,9 @@ public class Figury implements ActionListener{
 		wybor_figury.addItem("Kwadrat");
 		wybor_figury.addItem("Trojkat");
 		ramka.add(wybor_figury);
-		wybor_figury.addActionListener(this);
+		wybor_figury.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent e)
+		});
 		
 		wybierz_kolor = new JButton("Wybierz kolor");
 		ramka.add(wybierz_kolor);
@@ -106,7 +108,7 @@ public class Figury implements ActionListener{
 			poletext1.setForeground(wybrany_kolor);
 		}
 	
-		if(dzialanie.getSource() == wybor_figury){
+		if(e.getSource() == wybor_figury){
 			String figura = wybor_figury.getSelectedItem().toString();
 			
 			if(figura.equals("Kwadrat")){
